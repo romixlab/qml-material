@@ -29,7 +29,7 @@ import Material.ListItems 0.1 as ListItem
 BottomSheet {
     id: bottomSheet
 
-    property list<Action> actions
+    property var actions
 
     property string title
 
@@ -82,7 +82,7 @@ BottomSheet {
                         model: actions
 
                         delegate: Column {
-                            width: parent.width
+                            width: subColumn.width
 
                             ListItem.Standard {
                                 id: listItem
